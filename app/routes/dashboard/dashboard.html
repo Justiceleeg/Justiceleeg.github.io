@@ -1,0 +1,19 @@
+<div class="dashboard">
+    <div id="graph">
+    <graph-directive data='dataOfSlopes'></graph-directive>
+    </div>
+    <div class="dashboard-bar">
+        <div class='head-date'><span class='slope-head'><h5>Nearest Slopes:</h5></span><span class='date-head' ><input type="text" placeholder='Start: YYYY-MM-DD' ng-model='startDate'/>&nbsp;&nbsp;<input type="text" placeholder='End: YYYY-MM-DD' ng-model='endDate'/>
+<br/></span></div>
+        <div class="snotel">
+          <div ng-repeat='snotel in snotels' class='snotel-info' ng-click='populateData(snotel.station_information.triplet,startDate,endDate)'>
+            <h4>{{snotel.station_information.name}}</h4>
+            <p>{{snotel.station_information.elevation}} ft</p>
+            <p>{{snotel.distance | number: 0}} mi</p>
+          </div>
+        </div>
+        <div class="input-containers">
+            <search-google fun-run='getGoogleForNewSnotels(lat, long)'></search-google>
+        </div>
+    </div>
+</div>

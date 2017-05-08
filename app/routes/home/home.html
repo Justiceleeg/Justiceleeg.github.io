@@ -1,0 +1,16 @@
+<div class='home'>
+    <div id="mask">
+        <div class="home-box">
+            <h2>Search for slopes near </br>{{location.city}}, {{location.state}}?</h2>
+            <br/>
+            <div class='snowflake' ui-sref='dashboard({latitude: location.latitude, longitude: location.longitude})'><i class="fa fa-snowflake-o" aria-hidden="true"></i></div>
+            <p ng-click='formOpen = !formOpen' class='elsewhere'>elsewhere</p>
+            <br/>
+            <div class='input-container' ng-show='formOpen'>
+
+            <search-google fun-run='getGoogleLocation(lat, long)'></search-google>
+
+            </div>
+        </div>
+    </div>
+</div>

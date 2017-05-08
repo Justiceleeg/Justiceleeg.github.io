@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@-ms-viewport {
+  width: device-width; }
+
+.main-nav {
+  color: white; }
+  .main-nav .navbar {
+    font-size: .7em;
+    font-family: 'Reem Kufi', sans-serif;
+    background: -webkit-linear-gradient(top, rgba(191, 191, 191, 0.3), transparent);
+    padding-top: 10px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px; }
+    .main-nav .navbar .home-div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+      width: 33%; }
+    .main-nav .navbar .dashboard-div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+      width: 33%; }
+    .main-nav .navbar .forecast-div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+      width: 33%; }
+  .main-nav .navbar:hover {
+    cursor: pointer; }
+
+body {
+  background-image: url("./imgs/darker_trees.jpg");
+  background-position: 25% 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+
+.dashboard {
+  width: 80%;
+  margin: auto; }
+  .dashboard #graph {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 45vh;
+    padding-top: 25px;
+    background: linear-gradient(to bottom, white, rgba(191, 191, 191, 0.6)); }
+  .dashboard .dashboard-bar {
+    width: 100%;
+    height: 30vh;
+    background: -webkit-linear-gradient(top, rgba(191, 191, 191, 0.6), transparent);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
+    .dashboard .dashboard-bar .snotel {
+      width: 100%;
+      height: 15vh;
+      display: flex;
+      flex-direction: row;
+      margin: 5px 0 5px 0; }
+    .dashboard .dashboard-bar .snotel-info {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-around;
+      font-family: 'Montserrat', sans-serif;
+      width: 20%;
+      height: 100%;
+      padding: 3px; }
+    .dashboard .dashboard-bar .snotel:hover {
+      cursor: pointer; }
+    .dashboard .dashboard-bar .snotel-info:nth-child(even) {
+      border-left: 3px solid #00c2ff;
+      border-right: 3px solid #00c2ff; }
+    .dashboard .dashboard-bar p {
+      color: white; }
+    .dashboard .dashboard-bar .input-containers {
+      text-align: center;
+      width: 235px;
+      margin-left: auto;
+      margin-right: auto; }
+
+.head-date {
+  height: 3vh; }
+
+.slope-head {
+  float: left;
+  padding-left: 5%; }
+
+.date-head {
+  float: right;
+  padding-right: 10%; }
+
+.dashboard-bar h4 {
+  color: white;
+  text-shadow: -2px 3px black; }
+
+.forecast-container {
+  height: 75vh;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif; }
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  color: white; }
+  .home .home-box {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 300px;
+    max-width: 400px;
+    padding: 50px 50px 0 50px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(top, rgba(191, 191, 191, 0.8), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .home .home-box .snowflake {
+      font-size: 2.5em;
+      text-shadow: 0 0 30px white;
+      transition: transform 1s ease-in-out; }
+    .home .home-box .snowflake:hover {
+      cursor: pointer;
+      transform: rotate(30deg); }
+    .home .home-box .elsewhere {
+      text-decoration: underline;
+      font-size: .8em;
+      align-self: flex-end; }
+    .home .home-box .elsewhere:hover {
+      cursor: pointer; }
+
+.input-containers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  height: 60px; }
+
+.inputboxes {
+  margin: 10px; }
+  .inputboxes input {
+    height: 20px;
+    font-size: 1.2em;
+    width: 100px;
+    margin-bottom: 5px; }
+
+.checkbutton button {
+  background-color: white;
+  color: #00c2ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px; }
+
+.checkbutton button:hover {
+  cursor: pointer; }

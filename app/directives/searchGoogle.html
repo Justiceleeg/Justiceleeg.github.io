@@ -1,0 +1,9 @@
+<form name='customform' class='inputboxes'>
+    <input ng-model='page.city' name='city' required placeholder="city" />
+    <input ng-model='page.state' name='state' required placeholder="state" />
+    <div class='checkbutton'>
+        <button type="submit" ng-disabled="customform.$invalid" ng-click='funRun({lat: page.city, long: page.state})'><i class="fa fa-check" aria-hidden="true"></i></button>
+    </div>
+</form>
+
+<!-- ng-click='getGoogleLocation(homepage.city,homepage.state)' -->

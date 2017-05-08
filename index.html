@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='snowApp'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snowful</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/b4a2162ad9.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi" rel="stylesheet">
+    <link rel='stylesheet' href='./bundle.css'>
+</head>
+
+<body >
+    <nav class='main-nav' ng-controller='homeCTRL'>
+      <div class='navbar'>
+                <div class='home-div' ui-sref='home'><h1>HOME</h1></div>
+                <div class='dashboard-div' ui-sref='dashboard({latitude: location.latitude, longitude: location.longitude})'><h1>DASHBOARD</h1></div>
+                <div class='forecast-div' ui-sref='forecast'><h1>FORECAST</h1></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class='test'></div>
+
+    <ui-view></ui-view>
+
+
+    <script src='https://d3js.org/d3.v3.js' charset="utf-8"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js'></script>
+    <script src='./bundle.js'></script>
+</body>
+
+</html>
